@@ -1,0 +1,7 @@
+.signUp {
+  width: 100%;
+  background-color: #f4f9fd;
+  height: 100vh;
+  padding: calc(20 / 14.4 * 1vw) calc(40 / 14.4 * 1vw) calc(20 / 14.4 * 1vw)
+    calc(20 / 14.4 * 1vw);
+}

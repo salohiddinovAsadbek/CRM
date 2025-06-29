@@ -1,0 +1,72 @@
+.signUpComponent {
+  width: calc(346 / 14.4 * 1vw);
+  background-color: #3f8cff;
+  border-radius: calc(24 / 14.4 * 1vw);
+  padding: calc(60 / 14.4 * 1vw) calc(60 / 14.4 * 1vw) 0 calc(40 / 14.4 * 1vw);
+  height: 100%;
+}
+
+.signUpComponent > a > img {
+  width: calc(50 / 14.4 * 1vw);
+  height: calc(50 / 14.4 * 1vw);
+}
+
+.signUpComponent h1 {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: calc(36 / 14.4 * 1vw);
+  line-height: 100%;
+  color: #ffffff;
+  margin-top: calc(60 / 14.4 * 1vw);
+  margin-bottom: calc(50 / 14.4 * 1vw);
+}
+
+.routesSignUp {
+  display: flex;
+  flex-direction: column;
+  gap: calc(6 / 14.4 * 1vw);
+}
+
+.routeSignUp {
+  display: flex;
+  flex-direction: column;
+  gap: calc(6 / 14.4 * 1vw);
+  opacity: 50%;
+}
+
+.routeSignUp > button {
+  border: none;
+  display: flex;
+  background-color: inherit;
+  gap: calc(22 / 14.4 * 1vw);
+  align-items: center;
+  cursor: pointer;
+}
+
+.routeSignUp > button > div {
+  width: calc(24 / 14.4 * 1vw);
+  height: calc(24 / 14.4 * 1vw);
+  border: calc(2 / 14.4 * 1vw) solid #ffffff;
+  border-radius: 50%;
+}
+
+.routeSignUp > button > p {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: calc(18 / 14.4 * 1vw);
+  line-height: calc(26 / 14.4 * 1vw);
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.routeSignUp > p {
+  width: calc(2 / 14.4 * 1vw);
+  height: calc(26 / 14.4 * 1vw);
+  background-color: #ffffff;
+  border-radius: calc(1 / 14.4 * 1vw);
+  margin-left: calc(11 / 14.4 * 1vw);
+}
+
+.activeStep {
+  opacity: 100%;
+}
