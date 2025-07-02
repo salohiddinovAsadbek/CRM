@@ -4,4 +4,38 @@
   height: 100vh;
   padding: calc(20 / 14.4 * 1vw) calc(40 / 14.4 * 1vw) calc(20 / 14.4 * 1vw)
     calc(20 / 14.4 * 1vw);
+  display: flex;
+  gap: calc(30 / 14.4 * 1vw);
+}
+
+.signUpRight {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: calc(24 / 14.4 * 1vw);
+  justify-content: space-between;
+}
+
+.signUpRight > div:first-child > p {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3f8cff;
+}
+
+.signUpRight > div:first-child > h1 {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: calc(22 / 14.4 * 1vw);
+  line-height: 100%;
+  text-align: center;
+  color: #0a1629;
+  margin-top: calc(6 / 14.4 * 1vw);
+}
+
+.signUpRight > div:first-child {
+  padding: calc(75 / 14.4 * 1vw) calc(300 / 14.4 * 1vw) 0 calc(300 / 14.4 * 1vw);
 }

@@ -1,11 +1,15 @@
 import { NavLink } from "react-router-dom";
 import "../style/signupComponent.css";
-import { decrementStep, incrementStep } from "../store/signupReducers";
 import { useDispatch } from "react-redux";
 import { changeStep } from "../store/signupReducers";
+import { useEffect } from "react";
 
-function SignUpComponent({ mainLogo = "salom", currentStep = 1 }) {
+function SignUpComponent({ mainLogo = "salom", currentStep }) {
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    console.log(currentStep);
+  }, [currentStep]);
 
   return (
     <div className="signUpComponent">
@@ -42,8 +46,6 @@ function SignUpComponent({ mainLogo = "salom", currentStep = 1 }) {
           </button>
         </div>
       </div>
-      <button onClick={() => dispatch(decrementStep())}>back</button>
-      <button onClick={() => dispatch(incrementStep())}>next</button>
     </div>
   );
 }

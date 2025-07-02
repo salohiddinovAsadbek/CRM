@@ -1,0 +1,159 @@
+.signUpStep1 {
+  display: flex;
+  flex-direction: column;
+  gap: calc(9 / 14.4 * 1vw);
+}
+
+.signUpCard {
+  padding: calc(3 / 14.4 * 1vw) 0 calc(20 / 14.4 * 1vw) 0;
+  display: flex;
+  flex-direction: column;
+  gap: calc(6.2 / 14.4 * 1vw);
+}
+
+.verificationTitle {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(24 / 14.4 * 1vw);
+  color: #7d8592;
+}
+
+.phoneSignUp {
+  display: flex;
+  gap: calc(16 / 14.4 * 1vw);
+  position: relative;
+}
+
+.phoneSignUp > select {
+  width: calc(74 / 14.4 * 1vw);
+  height: calc(50 / 14.4 * 1vw);
+  border-radius: calc(14 / 14.4 * 1vw);
+  border: calc(1 / 14.4 * 1vw) solid#D8E0F0;
+  box-shadow: 0px calc(1 / 14.4 * 1vw) calc(2 / 14.4 * 1vw) 0px #b8c8e039;
+  appearance: none;
+  background-image: url("../images/gray.svg");
+  background-repeat: no-repeat;
+  background-position: right calc(12 / 14.4 * 1vw) center;
+  display: flex;
+  justify-content: center;
+  padding: calc(14 / 14.4 * 1vw);
+  outline: none;
+}
+
+.phoneSignUp > input {
+  width: calc(313 / 14.4 * 1vw);
+  height: calc(50 / 14.4 * 1vw);
+  border: calc(1 / 14.4 * 1vw) solid#D8E0F0;
+  border-radius: calc(14 / 14.4 * 1vw);
+  padding-left: calc(18 / 14.4 * 1vw);
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(24 / 14.4 * 1vw);
+  letter-spacing: 0px;
+  color: #7d8592;
+  padding-right: calc(15 / 14.4 * 1vw);
+}
+
+.phoneSignUp > input::placeholder {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(24 / 14.4 * 1vw);
+  letter-spacing: 0px;
+  color: #7d8592;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.verificationSms > div {
+  display: flex;
+  gap: calc(16 / 14.4 * 1vw);
+}
+
+.verificationSms > div > input {
+  width: calc(58 / 14.4 * 1vw);
+  height: calc(50 / 14.4 * 1vw);
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(24 / 14.4 * 1vw);
+  letter-spacing: 0px;
+  text-align: center;
+  color: #7d8592;
+  border: calc(1 / 14.4 * 1vw) solid#D8E0F0;
+  box-shadow: 0px calc(1 / 14.4 * 1vw) calc(2 / 14.4 * 1vw) 0px #b8c8e039;
+  outline: none;
+  border-radius: calc(14 / 14.4 * 1vw);
+}
+
+.emailaddress > input {
+  width: calc(403 / 14.4 * 1vw);
+  height: calc(48 / 14.4 * 1vw);
+  border: calc(1 / 14.4 * 1vw) solid #d8e0f0;
+  border-radius: calc(14 / 14.4 * 1vw);
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(24 / 14.4 * 1vw);
+  letter-spacing: 0px;
+  color: #7d8592;
+  padding: 0 calc(18 / 14.4 * 1vw);
+  outline: none;
+}
+
+.emailaddress > input::placeholder {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(24 / 14.4 * 1vw);
+  letter-spacing: 0px;
+  color: #7d8592;
+}
+
+.passwordSignUp {
+  position: relative;
+}
+
+.passwordSignUp > input {
+  width: calc(403 / 14.4 * 1vw);
+  height: calc(48 / 14.4 * 1vw);
+  border: calc(1 / 14.4 * 1vw) solid #d8e0f0;
+  border-radius: calc(14 / 14.4 * 1vw);
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(24 / 14.4 * 1vw);
+  letter-spacing: 0px;
+  color: #7d8592;
+  padding: 0 calc(18 / 14.4 * 1vw);
+  padding-right: calc(45 / 14.4 * 1vw);
+  outline: none;
+}
+
+.passwordSignUp > input::placeholder {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(24 / 14.4 * 1vw);
+  letter-spacing: 0px;
+  color: #7d8592;
+}
+
+.passwordSignUp > img {
+  position: absolute;
+  width: calc(24 / 14.4 * 1vw);
+  height: calc(24 / 14.4 * 1vw);
+  top: calc(36 / 14.4 * 1vw);
+  right: calc(18 / 14.4 * 1vw);
+  cursor: pointer;
+}

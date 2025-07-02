@@ -16,9 +16,9 @@ const signUpStep = createSlice({
         state.step -= 1;
       }
 
-      if (action) {
-        state.step = action.payload;
-      }
+      // if (action) {
+      //   state.step = action.payload;
+      // }
     },
     changeStep: (state, action) => {
       state.step = action.payload;
