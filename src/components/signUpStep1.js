@@ -1,5 +1,5 @@
 import "../style/signupstep1.css";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import View from "../images/viewpassword.svg";
 
 function SignUpStep1() {
@@ -19,13 +19,8 @@ function SignUpStep1() {
     }
   }
 
-  useEffect(() => {
-    console.log(smsWrite);
-  }, [smsWrite]);
-
   function hidePassword() {
     setHide((prev) => !prev);
-    console.log(inputsRef);
   }
 
   return (

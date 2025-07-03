@@ -70,3 +70,7 @@
 .activeStep {
   opacity: 100%;
 }
+
+.activeStep > button > div {
+  background-color: #ffffff4d;
+}

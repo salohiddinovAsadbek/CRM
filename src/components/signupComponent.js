@@ -7,10 +7,6 @@ import { useEffect } from "react";
 function SignUpComponent({ mainLogo = "salom", currentStep }) {
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    console.log(currentStep);
-  }, [currentStep]);
-
   return (
     <div className="signUpComponent">
       <NavLink to="/home">

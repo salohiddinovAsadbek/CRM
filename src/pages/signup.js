@@ -2,29 +2,38 @@ import mainLogo from "../images/white.svg";
 import SignUpComponent from "../components/signupComponent";
 import "../style/signUp.css";
 import { useSelector } from "react-redux";
-import { useEffect, useState } from "react";
 import SignUpStep1 from "../components/signUpStep1";
 import SignUpNavigator from "../components/signUpNavigator";
+import SignUpStep2 from "../components/signupStep2";
 
 function SignUp() {
   const step = useSelector((state) => state.signupstep.step);
-  const [currentStep, setCurrentStep] = useState(step);
 
-  // useEffect(
-  //   function defineStep() {
-  //     setCurrentStep(step);
-  //   },
-  //   [step]
-  // );
+  const pageDetails = [
+    {
+      page: <SignUpStep1 />,
+      title: "Valid your phone",
+    },
+    {
+      page: <SignUpStep2 />,
+      title: "Tell about yourself",
+    },
+    {
+      title: "Tell about your company",
+    },
+    {
+      title: "Invite Team Members",
+    },
+  ];
 
   return (
     <div className="signUp">
       <SignUpComponent mainLogo={mainLogo} currentStep={step} />
       <div className="signUpRight">
         <div>
-          <p>Step 1/4</p>
-          <h1>Valid your phone</h1>
-          {step === 1 && <SignUpStep1 />}
+          <p>Step {step}/4</p>
+          <h1>{pageDetails[step - 1].title}</h1>
+          {pageDetails[step - 1].page}
         </div>
         <div>
           <SignUpNavigator step={step} />
