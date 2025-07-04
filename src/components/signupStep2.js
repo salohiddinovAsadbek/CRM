@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import "../style/signupstep2.css";
+import SelectComponent from "./selectComponent";
 
 function SignUpStep2() {
   const [userSelected, setSelect] = useState("");
+  const [isService, setService] = useState("Work");
+  const [isBest, setBest] = useState("Business owner");
 
   function userSelect(type) {
     if (userSelected === "no" && type === "yes") {
@@ -24,17 +27,21 @@ function SignUpStep2() {
 
   return (
     <div className="signupstep2">
-      <div>
+      <div className="serviceSignup">
         <p className="signupstep2title">Why will you use the service?</p>
-        <select>
-          <option value="work">Work</option>
-        </select>
+        <SelectComponent
+          value={["Work", "Study"]}
+          isValue={isService}
+          setValue={setService}
+        />
       </div>
-      <div>
+      <div className="serviceSignup">
         <p className="signupstep2title">What describes you best?</p>
-        <select>
-          <option value="Business Owner">Business Owner</option>
-        </select>
+        <SelectComponent
+          value={["Work", "Study"]}
+          isValue={isBest}
+          setValue={setBest}
+        />
       </div>
       <div className="signupstep2Describe">
         <p>What describes you best?</p>

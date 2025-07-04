@@ -1,11 +1,13 @@
 import "../style/signupstep1.css";
 import { useRef, useState } from "react";
 import View from "../images/viewpassword.svg";
+import SelectComponent from "./selectComponent";
 
 function SignUpStep1() {
   const [smsWrite, setSmsWrite] = useState(["", "", "", ""]);
   const inputsRef = useRef([]);
   const [isHide, setHide] = useState(false);
+  const [isValue, setValue] = useState("+1");
 
   function smsVerification(type, number) {
     const onlyDigit = number.toString().slice(0, 1); // faqat 1 ta raqam
@@ -28,10 +30,11 @@ function SignUpStep1() {
       <div className="verificationPhone signUpcard">
         <p className="verificationTitle">Mobile Number</p>
         <div className="phoneSignUp">
-          <select>
-            <option value="+1">+1</option>
-            <option value="+998">+998</option>
-          </select>
+          <SelectComponent
+            value={["+1", "+998"]}
+            isValue={isValue}
+            setValue={setValue}
+          />
           <input type="number" placeholder="345 567-23-56" />
         </div>
       </div>

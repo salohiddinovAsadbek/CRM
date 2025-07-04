@@ -1,0 +1,41 @@
+.selectComponent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: calc(12 / 14.4 * 1vw);
+  align-items: center;
+  position: relative;
+}
+
+.selectComponent img {
+  width: calc(24 / 14.4 * 1vw);
+  height: calc(24 / 14.4 * 1vw);
+}
+
+.selectComponentValues {
+  top: calc(10 / 14.4 * 1vw);
+  right: calc(10 / 14.4 * 1vw);
+  width: 100%;
+  position: absolute;
+  height: min-content;
+  border-radius: calc(8 / 14.4 * 1vw);
+  overflow: hidden;
+}
+
+.selectComponentValues > p {
+  width: 100%;
+  padding: calc(5 / 14.4 * 1vw) calc(10 / 14.4 * 1vw); /* ichki bo'shliq */
+  color: white; /* matn rangi */
+  background-color: rgb(63, 63, 63); /* orqa fon rangi */
+  font-size: calc(14 / 14.4 * 1vw);
+  cursor: pointer;
+}
+
+.selectActiveTitle {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: calc(24 / 14.4 * 1vw);
+  letter-spacing: 0px;
+  color: #7d8592;
+}
