@@ -5,6 +5,7 @@
   padding: calc(12 / 14.4 * 1vw);
   align-items: center;
   position: relative;
+  cursor: pointer;
 }
 
 .selectComponent img {

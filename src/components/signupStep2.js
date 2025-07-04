@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "../style/signupstep2.css";
 import SelectComponent from "./selectComponent";
 
@@ -21,10 +21,6 @@ function SignUpStep2() {
     }
   }
 
-  useEffect(() => {
-    console.log(userSelected);
-  }, [userSelected]);
-
   return (
     <div className="signupstep2">
       <div className="serviceSignup">
@@ -38,7 +34,7 @@ function SignUpStep2() {
       <div className="serviceSignup">
         <p className="signupstep2title">What describes you best?</p>
         <SelectComponent
-          value={["Work", "Study"]}
+          value={["Business owner", "Study"]}
           isValue={isBest}
           setValue={setBest}
         />

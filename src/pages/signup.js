@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import SignUpStep1 from "../components/signUpStep1";
 import SignUpNavigator from "../components/signUpNavigator";
 import SignUpStep2 from "../components/signupStep2";
+import SignUpStep3 from "../components/signupstep3";
 
 function SignUp() {
   const step = useSelector((state) => state.signupstep.step);
@@ -19,6 +20,7 @@ function SignUp() {
       title: "Tell about yourself",
     },
     {
+      page: <SignUpStep3 />,
       title: "Tell about your company",
     },
     {

@@ -37,5 +37,11 @@
 }
 
 .signUpRight > div:first-child {
-  padding: calc(75 / 14.4 * 1vw) calc(300 / 14.4 * 1vw) 0 calc(300 / 14.4 * 1vw);
+  /* padding: calc(75 / 14.4 * 1vw) calc(300 / 14.4 * 1vw) 0 calc(300 / 14.4 * 1vw); */
+  padding-top: calc(75 / 14.4 * 1vw);
+  display: flex;
+  width: calc(1004 / 14.4 * 1vw);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
